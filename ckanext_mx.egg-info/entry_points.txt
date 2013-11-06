@@ -1,0 +1,6 @@
+
+        [ckan.plugins]
+	# Add plugins here, eg
+	# myplugin=ckanext.mx:PluginClass
+	mx=ckanext.mx.plugin:mxPlugin
+	

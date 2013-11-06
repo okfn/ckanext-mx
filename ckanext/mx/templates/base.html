@@ -1,0 +1,11 @@
+{% ckan_extends %}
+
+{% block links -%}
+  <link rel="shortcut icon" href="favicon.ico" />
+{% endblock -%}
+
+{% block styles %}
+  {{ super() }}
+  {% resource 'ckanext-mx/styles/mx.css' %}
+{% endblock %}
+      

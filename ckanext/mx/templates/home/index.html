@@ -1,0 +1,16 @@
+{% ckan_extends %}
+
+{% block content %}
+  <div role="main" class="hero">
+    <img src="//maps.googleapis.com/maps/api/staticmap?center=23.63450,-102.55278&zoom=7&size=640x300&sensor=false&scale=2" class="map">
+    <div id="content" class="container">
+      {{ self.flash() }}
+      {{ self.primary_content() }}
+    </div>
+  </div>
+  <div class="main homepage">
+    <div class="container">
+      {{ self.secondary_content() }}
+    </div>
+  </div>
+{% endblock %}
