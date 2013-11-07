@@ -254,6 +254,12 @@ input[type="color"]:focus,
   border-color: @secondary;
 }
 
+.hide-heading {
+  display: block;
+	visibility:hidden;
+	height:0px;
+}
+
 
 /* ======================================================
    Layout & Targeted Styles
@@ -539,6 +545,11 @@ body {
 }
 .primary .module-content .search-form .search-input button i {
   color: @dark;
+}
+.primary .module-content > .form-actions {
+	margin-left:0;
+	margin-right:0;
+	padding-top:20px;
 }
 .primary h3,
 .ckan-comment-thread h3 {
