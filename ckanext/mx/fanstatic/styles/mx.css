@@ -643,6 +643,10 @@ body {
 .dataset-item {
   border-bottom: solid 2px #a3abb6;
 }
+.media-view:hover .banner,
+.media-view.hovered .banner {
+  background-color: #a3abb6;
+}
 /* Groups */
 .groups.wrapper {
   background-color: #e6e6e6;
