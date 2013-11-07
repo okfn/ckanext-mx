@@ -27,6 +27,6 @@ setup(
         [ckan.plugins]
 	# Add plugins here, eg
 	# myplugin=ckanext.mx:PluginClass
-	mx=ckanext.nsw.plugin:mxPlugin
+	mx=ckanext.mx.plugin:mxPlugin
 	""",
 )
