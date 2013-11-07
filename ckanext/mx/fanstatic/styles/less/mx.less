@@ -440,6 +440,37 @@ body {
   .border-radius(0, 0, 0, 0);
 	padding:0 !important;
 }
+.stages {
+  margin: -20px 0 20px -20px;
+  width: 700px;
+}
+.stages li {
+  background-color: @light;
+}
+.stages li:after {
+    border-color: @light fade(@light , 0%);
+}
+.stages li.active:before {
+  color: @secondary;
+}
+.stages li.active:after {
+  border-color: @secondary fade(@secondary , 0%);
+}
+.stages li.active .highlight {
+  background-color:@secondary;
+}
+.stages li.complete:before {
+  background-color: lighten(@secondary , 25%);
+  color: lighten(@secondary , 10%);
+}
+.stages li.complete:after {
+  border-color: lighten(@secondary , 10%) fade(@secondary , 0%);
+}
+.stages li.complete .highlight {
+  background-color: lighten(@secondary , 10%);
+  color: lighten(@secondary , 25%);
+}
+
 .primary .module-content.page-header .nav-tabs,
 .module-content.page-header .nav-tabs {
   border-bottom: none;
@@ -485,6 +516,12 @@ body {
 }
 .primary .module-content > *:last-child {
 	padding-bottom:20px;
+}
+.primary .module-content > .label,
+.primary .module-content > .badge {
+	padding: 2px 4px;
+	margin-left:20px;
+	margin-right: 20px;
 }
 .primary .module-content .page_primary_action {
 	background-color:@light;
