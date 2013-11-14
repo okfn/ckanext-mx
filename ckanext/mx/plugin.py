@@ -3,6 +3,7 @@ import ckan.plugins.toolkit as tk
 
 class mxPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
+    plugins.implements(plugins.IRoutes, inherit=True)
 
     def update_config(self, config):
 
@@ -16,3 +17,7 @@ class mxPlugin(plugins.SingletonPlugin):
 
         # Add this plugin's fanstatic dir.
         tk.add_resource('fanstatic', 'ckanext-mx')
+
+    def before_map(self, m):
+        m.redirect('/', '/dataset')
+        return m
