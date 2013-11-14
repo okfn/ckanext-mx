@@ -1,0 +1,3 @@
+#, python-format
+msgid "Filter by location"
+msgstr "Filtrar por localidad"
