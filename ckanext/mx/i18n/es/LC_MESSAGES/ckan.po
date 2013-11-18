@@ -1,3 +1,6 @@
 #, python-format
 msgid "Filter by location"
 msgstr "Filtrar por localidad"
+
+msgid "Dataset extent"
+msgstr "Área de cobertura"
