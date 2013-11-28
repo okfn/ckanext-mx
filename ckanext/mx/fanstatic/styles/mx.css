@@ -316,12 +316,13 @@ body {
   font-family: "Abel", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
-  line-height: 101px;
   font-weight: 400;
   color: #FFF;
+  display: block;
+  padding-top: 46px;
 }
 .masthead hgroup h2 {
-  bottom: -8px;
+  bottom: -43px;
   font-size: 14px;
   font-weight: 200;
   font-style: italic;
