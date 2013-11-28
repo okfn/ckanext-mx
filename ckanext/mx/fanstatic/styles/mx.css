@@ -307,7 +307,7 @@ body {
   background-image: url(../../images/logo.svg);
   background-repeat: no-repeat;
   background-position: left center;
-  height: 140px;
+  height: 150px;
 }
 .ie .masthead {
   background-image: url(../../images/logo.png);
@@ -315,10 +315,17 @@ body {
 .masthead .logo {
   font-family: "Abel", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 30px;
   line-height: 101px;
   font-weight: 400;
   color: #FFF;
+}
+.masthead hgroup h2 {
+  bottom: -8px;
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+  color: #e6e6e6;
 }
 .masthead .content {
   top: 0;
