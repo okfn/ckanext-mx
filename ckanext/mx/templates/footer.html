@@ -1,4 +1,22 @@
 {% ckan_extends %}
 
-{% block footer_links %}
+{% block footer_content %}
+  <a class="mexico-digital">
+    <img src="{{ h.url_for_static('/images/mexico-digital.png') }}" alt="mx_a méxico abierto">
+  </a>
+  <div class="attribution">
+    <p><a href="http://www.opendefinition.org/okd/"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="Open Data"></a></p>
+    <p><a href="http://creativecommons.org/licenses/by/4.0/"><img src="{{ h.url_for_static('/images/cc-by.png') }}" alt="cc by"></a></p>
+    {% block footer_attribution %}
+    <p>{% trans %}Powered by <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>{% endtrans %}</p>
+    {% endblock %}
+  </div>
+  <nav class="footer-links">
+    {% block footer_nav %} 
+        {% block footer_links %}
+          <a href="{{ h.url_for('/acerca') }}">{{ _('About') }}</a> | <a href="mailto:hola@datos.gob.mx">{{ _('Contact') }}</a> | <a href="{{ h.url_for('/privacidad') }}">{{ _('Privacy') }}</a> | <a href="{{ h.url_for('/terminos') }}">{{ _('Terms and Conditions') }}</a>
+        {% endblock %}
+    {% endblock %}
+  </nav>
+  
 {% endblock %}
