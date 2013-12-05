@@ -8,5 +8,5 @@ HERE=`dirname $0`
 
 msgcat --use-first \
     "$HERE/../ckanext/mx/i18n/es/LC_MESSAGES/ckan.po" \
-    "$HERE/../../ckan/i18n/es/LC_MESSAGES/ckan.po" \
-    | msgfmt - -o "$HERE/../../ckan/i18n/es/LC_MESSAGES/ckan.mo"
+    "$HERE/../../ckan/ckan/i18n/es/LC_MESSAGES/ckan.po" \
+    | msgfmt - -o "$HERE/../../ckan/ckan/i18n/es/LC_MESSAGES/ckan.mo"
