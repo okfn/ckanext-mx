@@ -17,3 +17,12 @@ msgstr "Filtrar por localidad"
 
 msgid "Dataset extent"
 msgstr "Área de cobertura"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Privacy"
+msgstr "Privacidad"
+
+msgid "Terms and Conditions"
+msgstr "Términos y condiciones"
