@@ -300,7 +300,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .masthead,
-.masthead > .container {
+.masthead > .container .header-image {
   background-color: #303030;
 }
 .masthead {
@@ -322,11 +322,13 @@ body {
   padding-top: 46px;
 }
 .masthead hgroup h2 {
-  bottom: -43px;
+  position: static;
+  padding-top: 27px;
   font-size: 14px;
   font-weight: 200;
   font-style: italic;
   color: #e6e6e6;
+  float: none;
 }
 .masthead .content {
   top: 0;
@@ -897,4 +899,10 @@ body,
 }
 .main.homepage {
   border-top: 2px solid #303030;
+}
+/* Media Queries */
+@media all and (max-width: 1071px) {
+  .masthead > .container .header-image {
+    margin-left: 70px;
+  }
 }
