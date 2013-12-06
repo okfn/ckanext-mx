@@ -12,11 +12,11 @@
     {% endblock %}
   </div>
   <nav class="footer-links">
-    {% block footer_nav %} 
+    {% block footer_nav %}
         {% block footer_links %}
-          <a href="{{ h.url_for('/acerca') }}">{{ _('About') }}</a> | <a href="mailto:hola@datos.gob.mx">{{ _('Contact') }}</a> | <a href="{{ h.url_for('/privacidad') }}">{{ _('Privacy') }}</a> | <a href="{{ h.url_for('/terminos') }}">{{ _('Terms and Conditions') }}</a>
+          <a href="//datos.gob.mx/acerca">{{ _('About') }}</a> | <a href="mailto:hola@datos.gob.mx">{{ _('Contact') }}</a> | <a href="//datos.gob.mx/privacidad">{{ _('Privacy') }}</a> | <a href="//datos.gob.mx/terminos">{{ _('Terms and Conditions') }}</a>
         {% endblock %}
     {% endblock %}
   </nav>
-  
+
 {% endblock %}
