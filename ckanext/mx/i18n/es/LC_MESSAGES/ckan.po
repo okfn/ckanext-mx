@@ -26,3 +26,15 @@ msgstr "Privacidad"
 
 msgid "Terms and Conditions"
 msgstr "Términos y condiciones"
+
+#: We need this translation here while https://github.com/okfn/ckan/issues/1408
+#: isn't fixed
+#: ckan/lib/mailer.py:104
+#, python-format
+msgid ""
+"You have requested your password on %(site_title)s to be reset.\n"
+"\n"
+"Please click the following link to confirm this request:\n"
+"\n"
+"   %(reset_link)s\n"
+msgstr "Ha solicitado que se le resetee la clave en %(site_title)s.\n\nPor favor pulsa el siguiente enlace para confirmar la solicitud:\n\n   %(reset_link)s\n"
